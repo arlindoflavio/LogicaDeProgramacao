@@ -6,7 +6,11 @@ int main() {
 
     scanf(" %d", &n);
  
-    int sudoku[n*9][9];
+    int sudoku[n*9][9]; 
+
+// Gabriele, essa instrução até funciona em compiladores modernos, mas não é padrão.
+// Além disso, pode estourar para valores grandes de N.
+
     for(i = 0; i < n*9; i++){
         for(j = 0; j < 9; j++){
             scanf("%d", &sudoku[i][j]);
